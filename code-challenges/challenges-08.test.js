@@ -56,10 +56,12 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
+
   charArray.sort((a,b) => {
     return a.children.length - b.children.length;
   });
   return charArray;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,7 +73,9 @@ Write a function named containsW that takes in a string. This function should us
 
 const containsW = (str) => {
   // Solution code here...
+
   /w/.test(str);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -86,10 +90,12 @@ For example:
 'hello world' returns false
 ------------------------------------------------------------------------------------------------ */
 
+
 const isNum = (input) => { 
   // Solution code here...
   /[0-9]/.test(input);
-};
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -98,9 +104,11 @@ Write a function named containsWorld that takes in a string or number of any len
 
 ------------------------------------------------------------------------------------------------ */
 
+
 const containsWorld = (input) => { 
   // Solution code here...
   /world/.test(input);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,9 +119,11 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
+
 const isCapitalized = (str) => { 
   // Solution code here...
   [...str.matchAll(/\b[A-Z]\w*\b/g)].map(items => items[0]);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -124,6 +134,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+
   let array = [];
   for (let i = 0; i < arr.length; i++) {
     let regex = /^[A-J]/g;
@@ -132,6 +143,7 @@ const citiesAtoJ = (arr) => {
     }
   }
   return array;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
